@@ -12,7 +12,7 @@ function mymizan_simple_redirection_plugin() {
 	/**
 	 * If the user is already on frontpage or home
 	 * page (blogs) or in the admin area return false.
-	**/
+	*/
 	if ( is_front_page() ||
 		 is_home() ||
 		 is_admin() ) {
@@ -24,14 +24,14 @@ function mymizan_simple_redirection_plugin() {
 	 * cart, checkout, shop, privacy policy etc.
 	 * You don't need to add homepage, blog page as they are
 	 * already being checked above
-	**/
+	*/
 	$whitelist = array(
 		// put page IDs to ignore here
 	);
 
 	/**
 	 * The page you want to redirect to
-	**/
+	*/
 	$redirect_url = 'https://www.example.com/';
 
 	$current_object_id = get_queried_object_id();
